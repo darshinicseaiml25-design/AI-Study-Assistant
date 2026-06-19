@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Study Assistant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="dashboard">
+
+    <aside class="sidebar">
+        <h2>🤖 StudyAI</h2>
+
+        <ul>
+            <li>📚 Notes</li>
+            <li>✅ Tasks</li>
+            <li>⏳ Pomodoro</li>
+            <li>🧠 AI Assistant</li>
+        </ul>
+    </aside>
+
+    <main class="main">
+
+        <header>
+            <h1>AI Study Assistant</h1>
+            <button id="themeBtn">🌙 Dark Mode</button>
+        </header>
+
+        <div class="cards">
+
+            <section class="card">
+                <h2>📚 Notes</h2>
+                <textarea
+                    placeholder="Write your notes..."
+                ></textarea>
+                <button>Save Note</button>
+            </section>
+
+            <section class="card">
+                <h2>✅ Tasks</h2>
+                <input
+                    type="text"
+                    placeholder="Add task..."
+                >
+                <button>Add Task</button>
+            </section>
+
+            <section class="card">
+                <h2>⏳ Pomodoro Timer</h2>
+                <div class="timer">
+                    25:00
+                </div>
+
+                <div class="timer-buttons">
+                    <button>Start</button>
+                    <button>Pause</button>
+                    <button>Reset</button>
+                </div>
+            </section>
+
+            <section class="card">
+                <h2>🧠 AI Assistant</h2>
+                <input
+                    type="text"
+                    placeholder="Ask anything..."
+                >
+                <button>Ask AI</button>
+            </section>
+
+        </div>
+
+    </main>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
