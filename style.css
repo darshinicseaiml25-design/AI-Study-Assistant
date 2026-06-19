@@ -1,1 +1,113 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
 
+body{
+    background:#0f172a;
+    color:white;
+    min-height:100vh;
+}
+
+.dashboard{
+    display:flex;
+}
+
+.sidebar{
+    width:250px;
+    min-height:100vh;
+    background:#111827;
+    padding:30px;
+}
+
+.sidebar h2{
+    margin-bottom:30px;
+}
+
+.sidebar ul{
+    list-style:none;
+}
+
+.sidebar li{
+    margin:20px 0;
+    cursor:pointer;
+}
+
+.main{
+    flex:1;
+    padding:30px;
+}
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:30px;
+}
+
+#themeBtn{
+    padding:10px 15px;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:
+        repeat(auto-fit,minmax(300px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:#1e293b;
+    padding:20px;
+    border-radius:20px;
+}
+
+.card h2{
+    margin-bottom:15px;
+}
+
+textarea,
+input{
+    width:100%;
+    padding:12px;
+    border:none;
+    border-radius:10px;
+    margin-bottom:10px;
+}
+
+.card button{
+    padding:10px 15px;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+.timer{
+    font-size:50px;
+    text-align:center;
+    margin:20px 0;
+}
+
+.timer-buttons{
+    display:flex;
+    justify-content:center;
+    gap:10px;
+}
+
+@media(max-width:768px){
+
+    .dashboard{
+        flex-direction:column;
+    }
+
+    .sidebar{
+        width:100%;
+        min-height:auto;
+    }
+
+}
